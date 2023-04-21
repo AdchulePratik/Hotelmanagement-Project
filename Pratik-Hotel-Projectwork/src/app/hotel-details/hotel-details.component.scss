@@ -1,0 +1,33 @@
+body{
+  background-image: url("~/src/assets/images/Grand-Resort-owner.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p-cls{
+  color: whitesmoke;
+}
+
+
+
+
+table,th,tr,td{
+  border: 1px solid rgb(245, 8, 8);
+  background-color: antiquewhite;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 10px 10px;;
+
+}
+.div2 {
+  position: relative;
+  top:60px;
+}
+.div{
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top:30px;
+}

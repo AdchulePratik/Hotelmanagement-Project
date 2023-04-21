@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+All Angular useful commands-
+ng g c admin   //use component command
+ng g m admin --routing   //use module & routing create command
+ng g m admin --route admin --module app.module  //use module & routing with component create command
+ng s -o   //use Compile Run working command
+ng g s Dataservice  //use Dataservice command
+ng g d directives //use didrectives
+ng g p pipe //use pipes
+ng serve // const compile run
+ng g m anyfoldername //seprate module ts

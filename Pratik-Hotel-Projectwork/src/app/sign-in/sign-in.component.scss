@@ -1,0 +1,25 @@
+body{
+  background-image: url("~/src/assets/images/ownerland front.jpg");
+  height: 25%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: darkgray;
+
+}
+.loginform{
+  text-align: center;
+  margin :auto;
+  height: 60%;
+  width: 30%;
+  position: relative;
+  top: 150px;
+  background-color:aqua
+}
+mat-form-field {
+  padding: 20px;
+  width: 90%;
+}
+mat-raised-button {
+  width: 80%;
+}

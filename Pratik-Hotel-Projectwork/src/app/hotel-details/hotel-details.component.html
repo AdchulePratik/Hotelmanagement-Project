@@ -1,0 +1,36 @@
+<body>
+
+<p class="p-cls"><b>Hotel-details works!</b> </p>
+
+<button mat-raised-button color="accent" (click)="back()"> Back </button>
+
+<div class="div">
+
+  <mat-form-field>
+    <mat-icon matPrefix="">Search</mat-icon>
+    <input matInput [(ngModel)]="inputBoxValue">
+  </mat-form-field>
+</div>
+
+<div class="div2">
+  <table>
+    <tr>
+      <th *ngFor="let heading of tableHeadings"> {{heading}} </th>
+      <th *ngIf="endpoint == 'admin'">Delete</th>
+    </tr>
+
+    <tr *ngFor="let hotelsData of hotelDetails | search:inputBoxValue ">
+      <td> {{hotelsData.ownerName}} </td>
+      <td> {{hotelsData.hotelName}} </td>
+      <td> {{hotelsData.hotelAddress}} </td>
+      <td> {{hotelsData.hotelMobile}} </td>
+      <td> {{hotelsData.hotelMenu}} </td>
+      <td *ngIf="endpoint =='admin'"> <i class="i-cls" (click)="delete (hotelsData.id)"></i> delete </td>
+
+
+    </tr>
+  </table>
+
+</div>
+
+</body>

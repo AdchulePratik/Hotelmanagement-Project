@@ -1,0 +1,330 @@
+{
+  "admin": [
+    {
+      "name": "Pratik",
+      "mobile": "9011742609",
+      "Password": "Pratik12",
+      "confirmPassword": "Pratik12",
+      "TnC": true,
+      "gender": "male",
+      "email": "pratikadchule@gmail.com",
+      "city": "Banglore",
+      "id": 1
+    },
+    {
+      "name": "Pooja",
+      "mobile": "1234567898",
+      "Password": "Pooja1234",
+      "confirmPassword": "Pooja1234",
+      "TnC": true,
+      "gender": "fmale",
+      "email": "pooja@gmail.com",
+      "city": "mumbai",
+      "id": 2
+    },
+    {
+      "name": "Neha",
+      "mobile": "8796333333",
+      "Password": "Neha1234",
+      "confirmPassword": "Neha1234",
+      "TnC": true,
+      "gender": "female",
+      "email": "neha@gmail.com",
+      "city": "mumbai",
+      "id": 3
+    },
+    {
+      "name": "Aaliya",
+      "mobile": "8779180087",
+      "Password": "Aaliya1234",
+      "confirmPassword": "Aaliya1234",
+      "TnC": true,
+      "gender": "female",
+      "email": "aaliya@gmail.com",
+      "city": "Mumbai",
+      "id": 4
+    },
+    {
+      "name": "Kirti",
+      "mobile": "9899999999",
+      "Password": "Kirti1234",
+      "confirmPassword": "Kirti1234",
+      "TnC": true,
+      "gender": "female",
+      "email": "kirti@gmail.com",
+      "city": "pune",
+      "id": 5
+    },
+    {
+      "name": "Karina",
+      "mobile": "8779180087",
+      "Password": "Karina123",
+      "confirmPassword": "Karina123",
+      "TnC": true,
+      "gender": "female",
+      "email": "karina@gmail.com",
+      "city": "Mumbai",
+      "id": 6
+    },
+    {
+      "name": "Bhumi",
+      "mobile": "8779180087",
+      "Password": "Bhumi1234",
+      "confirmPassword": "Bhumi1234",
+      "TnC": true,
+      "gender": "female",
+      "email": "bhumi@gmail.com",
+      "city": "Mumbai",
+      "id": 7
+    },
+    {
+      "name": "Jiya",
+      "mobile": "8779180087",
+      "Password": "Jiya1234",
+      "confirmPassword": "Jiya1234",
+      "TnC": true,
+      "gender": "female",
+      "email": "Jiya@gmail.com",
+      "city": "Mumbai",
+      "id": 8
+    },
+    {
+      "name": "nitish",
+      "mobile": "4444556666",
+      "Password": "nitish123",
+      "confirmPassword": "nitish123",
+      "TnC": true,
+      "gender": "male",
+      "email": "nitish@gmail.com",
+      "city": "nashik",
+      "id": 9
+    }
+  ],
+  "owner": [
+    {
+      "name": "Pratik",
+      "mobile": "8779180087",
+      "Password": "Pratik123",
+      "confirmPassword": "poonam123",
+      "TnC": true,
+      "gender": "male",
+      "email": "poonambhapkar34@gmail.com",
+      "city": "Mumbai",
+      "id": 1
+    },
+    {
+      "name": "Piya",
+      "mobile": "8979180087",
+      "Password": "Piya123",
+      "confirmPassword": "Sheetal12",
+      "TnC": true,
+      "gender": "female",
+      "email": "Sheetal@gmail.com",
+      "city": "Mumbai",
+      "id": 2
+    },
+    {
+      "name": "Shreeya",
+      "mobile": "4567890343",
+      "Password": "Shreeya12",
+      "confirmPassword": "Shreeya12",
+      "TnC": true,
+      "gender": "female",
+      "email": "Shreeya@gmail.com",
+      "city": "pune",
+      "id": 2
+    },
+    {
+      "name": "Shreeya",
+      "mobile": "4567890343",
+      "Password": "Shreeya12",
+      "confirmPassword": "Shreeya12",
+      "TnC": true,
+      "gender": "female",
+      "email": "Shreeya@gmail.com",
+      "city": "pune",
+      "id": 2
+    },
+    {
+      "name": "Shreeya",
+      "mobile": "4567890343",
+      "Password": "Shreeya12",
+      "confirmPassword": "Shreeya12",
+      "TnC": true,
+      "gender": "female",
+      "email": "Shreeya@gmail.com",
+      "city": "pune",
+      "id": 3
+    },
+    {
+      "name": "pooja",
+      "mobile": "9979180087",
+      "Password": "pooja123",
+      "confirmPassword": "pooja123",
+      "TnC": true,
+      "gender": "female",
+      "email": "pooja@gmail.com",
+      "city": "Mumbai",
+      "id": 4
+    },
+    {
+      "name": "Santosh",
+      "mobile": "9979180087",
+      "Password": "Santosh123",
+      "confirmPassword": "Santosh123",
+      "TnC": true,
+      "gender": "male",
+      "email": "Santosh@gmail.com",
+      "city": "Mumbai",
+      "id": 5
+    }
+  ],
+  "user": [
+    {
+      "id": 1
+    }
+  ],
+  "hotelDetails": [
+    {
+      "ownerName": "Pratik",
+      "hotelName": "Paradise",
+      "hotelAddress": "Banglore",
+      "hotelMobile": "8787878787",
+      "hotelMenu": "Veg-chieez-Burger",
+      "roomAvailable": "10",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 1
+    },
+    {
+      "ownerName": "Piya",
+      "hotelName": "Dharmaraj",
+      "hotelAddress": "Maval,Pune",
+      "hotelMobile": "8787878787",
+      "hotelMenu": "Hot Beverages",
+      "roomAvailable": "07",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 2
+    },
+    {
+      "ownerName": "Dipika",
+      "hotelName": "Jagdanb",
+      "hotelAddress": "Paithan",
+      "hotelMobile": "8787878787",
+      "hotelMenu": "Rice",
+      "roomAvailable": "07",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 3
+    },
+    {
+      "ownerName": "Neha",
+      "hotelName": "Jagdanb",
+      "hotelAddress": "Munbai",
+      "hotelMobile": "8787878787",
+      "hotelMenu": "Fish Pulav",
+      "roomAvailable": "07",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 4
+    },
+    {
+      "ownerName": "Sonu",
+      "hotelName": "Rajveer",
+      "hotelAddress": "Pune",
+      "hotelMobile": "9766725698",
+      "hotelMenu": "Shahi Panir",
+      "roomAvailable": "03",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 5
+    },
+    {
+      "ownerName": "rahi",
+      "hotelName": "5 star",
+      "hotelAddress": "Ahmadnagar",
+      "hotelMobile": "9860908876",
+      "hotelMenu": "Paneer",
+      "roomAvailable": "10",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 6
+    },
+    {
+      "ownerName": "Radha",
+      "hotelName": "7 star",
+      "hotelAddress": "Pune",
+      "hotelMobile": "9860908876",
+      "hotelMenu": "Paneer Tikka",
+      "roomAvailable": "10",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 7
+    },
+    {
+      "ownerName": "Sakshi",
+      "hotelName": "samarth",
+      "hotelAddress": "Pategaon",
+      "hotelMobile": "9860908876",
+      "hotelMenu": "Rice",
+      "roomAvailable": "10",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 8
+    },
+    {
+      "ownerName": "Priyanka",
+      "hotelName": "5 star",
+      "hotelAddress": "Ahmadnagar",
+      "hotelMobile": "9860908876",
+      "hotelMenu": "Paneer",
+      "roomAvailable": "10",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 9
+    },
+    {
+      "ownerName": "Katrina",
+      "hotelName": "Hotel Plasa",
+      "hotelAddress": "Malkapur",
+      "hotelMobile": "9860908859",
+      "hotelMenu": "Rice",
+      "roomAvailable": "09",
+      "owenrCheck": true,
+      "userPass": "12121212",
+      "id": 10
+    },
+    {
+      "ownerName": "Anushka",
+      "hotelName": "AnshRaj Hotel",
+      "hotelAddress": "Nepti Naka ,Beed.",
+      "hotelMobile": "9832983888",
+      "hotelMenu": "Dal Tadka",
+      "roomAvailable": "02",
+      "owenrCheck": true,
+      "userPass": "12312312",
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "ownername": "",
+      "typeofapplicant": "",
+      "hotelname": "",
+      "hotelcontactnobr": "",
+      "hoteladdress": "",
+      "pancard": "",
+      "city": "",
+      "starrating": "",
+      "memberofhotelassociation": "",
+      "association": "select",
+      "numberofrooms": "",
+      "numberofemployees": "",
+      "acceptterms": false,
+      "id": 13
+    }
+  ],
+  "hotelBooking": []
+}
