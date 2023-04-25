@@ -1,13 +1,13 @@
 <body>
 
-<p><u><b> Sign-up works</b></u>!</p>
+<p><u><b><i>Sign-up works!</i></b></u>!</p>
 
-<button mat-raised-button color="warn" (click)="back()">Back</button>
+<button mat-raised-button color="alert" (click)="back()">Back</button>
 
 <body class="body">
 
 
-  </body>
+
 
 
 
@@ -81,6 +81,12 @@
     <mat-error>Password Not Match</mat-error>
   </span><br>
 
+  <section>
+    <mat-checkbox *ngFor="let city of cities ; let i = index "
+    [value]="city.cityName"
+    (change)="onChange($event,i)">{{city.cityName}} </mat-checkbox>
+  </section>
+
   <mat-checkbox formControlName="TnC">Accept Terms And Conditions</mat-checkbox> <br>
 
   <button mat-raised-button color="warn" [disabled]="!signUpForm.valid" (click)="submit()">Submit</button>
@@ -88,4 +94,4 @@
 
 
 </form>
-</body>
+

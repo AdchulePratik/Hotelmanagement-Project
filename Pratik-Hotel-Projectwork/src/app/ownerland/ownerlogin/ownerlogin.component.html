@@ -1,17 +1,18 @@
 <body>
 
 
-<p class="p-cls"> <b>Ownerlogin works!</b> </p>
+  <p class="p-cls"> <b><i>Ownerlogin works!</i> </b> </p>
 
-<div class="div">
-<button mat-raised-button color="warn" (click)="back()">Back</button>&nbsp;
-<button mat-raised-button color="warn" routerLink="/owner/hotelRegistration">Hotel Registration</button>&nbsp;
-<button mat-raised-button color="warn" (click)="viewMyHotelList()">view My Hotel List</button>&nbsp;
-<button mat-raised-button color="primary" (click)="viewAllHotelList()" >view All Hotel List</button>&nbsp;
-</div>
+  <div class="div">
+    <button mat-raised-button color="alert" (click)="back()">Back</button>&nbsp;
+    <button mat-raised-button color="warn" routerLink="/ownerland/hotelRegistration">Hotel Registration</button>&nbsp;
+    <!-- <button mat-raised-button color="accent" routerLink="/owner/hotelRegistration-form2">Hotel Registration form-2</button>&nbsp; -->
+    <button mat-raised-button color="accent" (click)="viewMyHotelList()">view My Hotel List</button>&nbsp;
+    <button mat-raised-button color="primary" (click)="viewAllHotelList()">view All Hotel List</button>&nbsp;
+  </div>
 
 
-<div *ngIf="this.hotelDetailsByOwner">
+  <!-- <div *ngIf="this.hotelDetailsByOwner">
 <ul *ngFor="let hotelData of this.hotelDetailsByOwner">
     <li>{{hotelData.ownerName}}</li>
     <li>{{hotelData.hotelName}}</li>
@@ -21,7 +22,38 @@
     <li>{{hotelData.roomAvailable}}</li>
 
 </ul>
-</div>
+</div> -->
+
+  <div *ngIf="this.hotelDetailsByOwner.length !=0">
+    <div class="search-bar-container">
+      <mat-form-field>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput[(ngModel)]="inputBoxValue">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+
+      <tr>
+        <th *ngFor="let heading of tableHeadings"> {{heading}} </th>
+      </tr>
+
+      <tr *ngFor="let hotelData of this.hotelDetailsByOwner| search:inputBoxValue">
+        <td> {{hotelData.hotelName}} </td>
+        <td> {{hotelData.ownerName}} </td>
+        <td> {{hotelData.hotelContactNo}} </td>
+        <td> {{hotelData.hotelAddress}} </td>
+        <td> {{hotelData.hotelEmail}} </td>
+        <td> {{hotelData.totalRooms}} </td>
+        <td> {{hotelData.speciality}} </td>
+        <td><i class="material-icons" (click)="delete(hotelData.id)">delete</i> </td>
+        <td><i class="material-icons" (click)="edit(hotelData.id)">edit</i> </td>
+      </tr>
+
+    </table>
+  </div>
 
 
 

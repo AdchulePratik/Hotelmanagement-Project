@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DataService } from '../data.service';
+import { DataService } from 'src/app/data.service';
+
 
 @Component({
-  selector: 'app-sign-in',
-  templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.scss']
+  selector: 'app-user-sign-in',
+  templateUrl: './user-sign-in.component.html',
+  styleUrls: ['./user-sign-in.component.scss']
 })
-export class SignInComponent {
+export class UserSignInComponent {
   loginform!: FormGroup;
   // endPoint:any;
   getApiData: any;
@@ -53,13 +54,13 @@ export class SignInComponent {
         this.router.navigateByUrl('/ownerland/ownerlogin')
       }
       else {
-        this.router.navigateByUrl('/ownerland/ownerlogin')
+        this.router.navigateByUrl('/userland/userlogin')
       }
     }
     else {
       alert('User not Fount')
       this.loginform.reset();
-      this.router.navigateByUrl('/signIn');
+      this.router.navigateByUrl('/usersignIn');
 
     }
   }
@@ -71,7 +72,7 @@ export class SignInComponent {
       this.router.navigateByUrl('/ownerland')
     }
     else {
-      this.router.navigateByUrl('/ownerland')
+      this.router.navigateByUrl('/userland')
     }
   }
 

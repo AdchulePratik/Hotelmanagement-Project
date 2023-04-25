@@ -25,10 +25,10 @@ export class AdminloginComponent {
 
   back(){
     if(this.signInOrSignUp =='signIn'){
-      this.router.navigateByUrl('/signIn');
+      this.router.navigateByUrl('/adminland/signIn');
     }
     else{
-      this.router.navigateByUrl('/signUp')
+      this.router.navigateByUrl('/adminland/signUp')
     }
   }
 

@@ -5,9 +5,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  getApiCall(hotelEndPoint: string) {
-    throw new Error('Method not implemented.');
-  }
+  EditJourney: any;
+  isEditJourney: any;
+  editJourney: any;
+  editId!: any;
+
+  hotelDetailsById: any;
+
 
 
   url = 'http://localhost:3000/';
@@ -17,6 +21,7 @@ export class DataService {
   Data: any;
   signinOrSignUp: any;
   ownerName: any;
+  to!: number;
   constructor(private http: HttpClient) {
 
 
@@ -26,8 +31,8 @@ export class DataService {
     let updateUrl = this.url + endPoint;
     return this.http.post(updateUrl, data)
   }
-  getApiCallData(endPoint: any) {
-    let updateUrl = this.url + endPoint;
+  getApiCall(endPoint: any,id?:any) {
+    let updateUrl = id? this.url + endPoint + '/' + id : this.url + endPoint;
     return this.http.get(updateUrl);
   }
   deleteApiCall(endPoint: string, id: number) {
@@ -35,4 +40,8 @@ export class DataService {
     return this.http.delete(updateUrl);
 
   }
+  patchApiCall(endPoint: string,data:any) {
+    let updateUrl = this.url + endPoint + '/' ;
+    return this.http.patch(updateUrl,data);
+}
 }

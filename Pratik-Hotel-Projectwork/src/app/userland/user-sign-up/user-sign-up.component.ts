@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { DataService } from '../data.service';
+import { DataService } from 'src/app/data.service';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.scss']
+  selector: 'app-user-sign-up',
+  templateUrl: './user-sign-up.component.html',
+  styleUrls: ['./user-sign-up.component.scss']
 })
-export class SignUpComponent {
+export class UserSignUpComponent {
   showPassword: boolean = false;
   showConfirmPassword: boolean = false;
   signUpForm!: FormGroup;
@@ -116,8 +117,7 @@ export class SignUpComponent {
     }
   }
   back() {
-    this.router.navigateByUrl('/signIn');
+    this.router.navigateByUrl('/userland/usersignIn');
   }
-
 
 }

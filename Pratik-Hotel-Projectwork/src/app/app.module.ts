@@ -14,9 +14,10 @@ import { RouterModule } from '@angular/router';
 
 
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
-import { SearchPipe } from './search.pipe';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ViewMyhotelListComponent } from './view-myhotel-list/view-myhotel-list.component';
+
 
 
 @NgModule({
@@ -26,8 +27,8 @@ import { ViewMyhotelListComponent } from './view-myhotel-list/view-myhotel-list.
     SignInComponent,
     SignUpComponent,
     HotelDetailsComponent,
-    SearchPipe,
-    ViewMyhotelListComponent
+    ViewMyhotelListComponent,
+  
   ],
   imports: [
     BrowserModule,

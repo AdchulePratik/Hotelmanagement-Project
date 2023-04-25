@@ -13,6 +13,7 @@ import { ViewMyhotelListComponent } from './view-myhotel-list/view-myhotel-list.
 
 
 
+
 const routes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'home', component:HomeComponent},
@@ -29,9 +30,10 @@ const routes: Routes = [
 
 
 
-  { path: 'admin', loadChildren: () => import('./adminland/adminland.module').then(m => m.AdminlandModule) },
-  { path: 'user', loadChildren: () => import('./userland/userland.module').then(m => m.UserlandModule) },
-   { path: 'owner', loadChildren: () => import('./ownerland/ownerland.module').then(m => m.OwnerlandModule) }];
+
+  { path: 'adminland', loadChildren: () => import('./adminland/adminland.module').then(m => m.AdminlandModule) },
+  { path: 'userland', loadChildren: () => import('./userland/userland.module').then(m => m.UserlandModule) },
+   { path: 'ownerland', loadChildren: () => import('./ownerland/ownerland.module').then(m => m.OwnerlandModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

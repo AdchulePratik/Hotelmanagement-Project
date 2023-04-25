@@ -1,12 +1,4 @@
-// body{
-//   background-image: url("~/src/assets/images/Grand-Resort-owner.jpg");
-//   height: 100%;
-//   width: 100%;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
-.span {
+.login {
   color: #fff;
 }
 
@@ -17,17 +9,17 @@
   font-size: 20px;
 }
 
-// .user-image {
-//   height: 250px;
-//   width: 150px;
-//   padding-top: 5px;
-// }
+.user-image {
+  height: 250px;
+  width: 150px;
+  padding-top: 5px;
+}
 
-// body {
-//   background-color: rgb(171, 219, 218);
-//   height: 250%;
-//   width: 100%;
-// }
+body {
+  background-color:lightslategray;
+  height: 250%;
+  width: 100%;
+}
 
 .sign-up {
   color: #fff;
@@ -39,14 +31,26 @@
   text-decoration: none;
 }
 
-.div {
-  background: #c31432;
-  background: -webkit-linear-gradient(to right, #172061, #d32945);
-  background: linear-gradient(to right, #311262, #cb2f49);
+// .auth-card {
+//   background: #c31432;
+//   background: -webkit-linear-gradient(to right, #172061, #d32945);
+//   background: linear-gradient(to right, #311262, #cb2f49);
+//   border-radius: 5px;
+//   box-shadow: 1px 1px 20px #24b929;
+//   width: 565px;}
+
+.auth-card {
+  background: white;
+  background: -webkit-linear-gradient(to right, white, pink);
+  background: linear-gradient(to right, blue, white);
   border-radius: 5px;
   box-shadow: 1px 1px 20px #24b929;
   width: 565px;
 
+}
+
+.form-control {
+  color: azure;
 }
 
 // .user-image {
@@ -59,12 +63,12 @@ label {
   font-weight: 700;
 }
 
-.div {
+.auth-avatar {
   text-align: center;
   margin-top: -50px;
 }
 
-.div {
+.auth {
   margin-top: 35px;
   border: none;
   border-radius: 6px;
@@ -111,5 +115,16 @@ mat-form-field {
   color: #e02a48;
   text-shadow: 3px 2px rgb(76, 84, 198);
   letter-spacing: 7px;
+  margin-left: 105px;
+}
+
+.p-cls {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:black;
+  text-shadow: 3px 2px rgb(198, 76, 76);
+  // letter-spacing: 7px;
   margin-left: 105px;
 }

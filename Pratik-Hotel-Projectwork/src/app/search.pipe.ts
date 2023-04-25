@@ -4,6 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'search'
 })
 export class SearchPipe implements PipeTransform {
+
   transform(arrayOfObject: any, inputBoxValue: any): any {
 
     console.log('value',arrayOfObject);

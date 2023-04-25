@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ViewMyhotelListComponent {
   endpoint!: string;
-  
+
 
 
   constructor(private dataservice: DataService,
@@ -21,13 +21,13 @@ export class ViewMyhotelListComponent {
 
   back() {
     if (this.endpoint == 'admin') {
-      this.router.navigateByUrl('/admin/adminlogin');
+      this.router.navigateByUrl('/adminland/adminlogin');
     }
     else if (this.endpoint == 'owner') {
-      this.router.navigateByUrl('/owner/ownerlogin');
+      this.router.navigateByUrl('/ownerland/ownerlogin');
     }
     else {
-      this.router.navigateByUrl('/owner/ownerlogin');
+      this.router.navigateByUrl('/ownerland/ownerlogin');
     }
   }
 

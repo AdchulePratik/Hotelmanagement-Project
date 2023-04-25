@@ -5,24 +5,22 @@ body{
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:aquamarine;
-}
+  background-color: hsl(166, 100%, 88%);
 
-.signupform{
-  text-align:center;
-  border: 2px solid pink;
-  padding: 10px;
+}
+.loginform{
+  text-align: center;
+  margin :auto;
+  height: 60%;
   width: 30%;
-  height:fit-content;
-  margin: 20px 120px;
-  background-color:red
+  position: relative;
+  top: 150px;
+  background-color:aqua
 }
-
 mat-form-field {
   padding: 20px;
   width: 90%;
 }
-mat-radio-group{
+mat-raised-button {
   width: 80%;
-  text-align: left;
 }

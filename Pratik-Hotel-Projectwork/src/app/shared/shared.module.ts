@@ -6,12 +6,16 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { MatListModule } from '@angular/material/list';
+import { SearchPipe } from '../search.pipe';
+
 
 
 
 @NgModule({
   declarations: [
+    SearchPipe
 
 
   ],
@@ -23,7 +27,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatInputModule,
     MatSelectModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    MatListModule,
+
+
+
 
 
   ],
@@ -34,7 +43,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatInputModule,
     MatSelectModule,
-    ReactiveFormsModule
+    MatListModule,
+    ReactiveFormsModule,
+    FormsModule,
+    SearchPipe
 
   ]
 })

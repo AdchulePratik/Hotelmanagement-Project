@@ -1,0 +1,23 @@
+.hotelRegistrationform2-Container{
+  background-color: rgb(235, 141, 224);
+  text-align: center;
+  height: 750px;
+  width: 400px;
+  margin: auto;
+}
+.main{
+
+
+/* background-image: url('../../../assets/Images/bali.jpg'); */
+  background-size: cover;
+}
+Input{
+  width: 301px;
+}
+.mat-mdc-form-field-infix {
+  flex: auto;
+  min-width: 0;
+  width: 301px;
+  position: relative;
+  box-sizing: border-box;
+}

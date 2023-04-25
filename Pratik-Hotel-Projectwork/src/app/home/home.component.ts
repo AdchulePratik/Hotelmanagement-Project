@@ -16,13 +16,13 @@ export class HomeComponent {
     console.log("service endpoint", this.dataservice.endPoint);
 
     if( Data === 'admin'){
-      this.router.navigateByUrl('/admin')
+      this.router.navigateByUrl('/adminland')
     }
     else if( Data === 'owner'){
-      this.router.navigateByUrl('/owner')
+      this.router.navigateByUrl('/ownerland')
     }
     else{
-      this.router.navigateByUrl('/user')
+      this.router.navigateByUrl('/userland')
     }
 
 

@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from 'src/app/data.service';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-hotel-details',
-  templateUrl: './hotel-details.component.html',
-  styleUrls: ['./hotel-details.component.scss']
+  selector: 'app-hoteldetails-bookuser',
+  templateUrl: './hoteldetails-bookuser.component.html',
+  styleUrls: ['./hoteldetails-bookuser.component.scss']
 })
-export class HotelDetailsComponent {
+export class HoteldetailsBookuserComponent {
   hotelDetails: any;
   tableHeadings = ["Hotel Name", "Owner Name", "Hotel Contact No",
-    "Hotel Address", "Hotel Email", "Rooms", "Speciality", "Delete", "Edit"];
+    "Hotel Address", "Hotel Email", "Rooms", "Speciality"];
   endpoint!: string;
   hotelEndPoint = "hotelDetails";
   inputBoxValue: any;
@@ -41,24 +42,26 @@ export class HotelDetailsComponent {
     await this.dataservice.getApiCall(this.hotelEndPoint,id).toPromise();
     this.getHotelDetails();
 
-    
+
 
   }
   back() {
     if (this.endpoint == 'admin') {
       this.router.navigateByUrl('/adminland/adminlogin');
     }
-    else if (this.endpoint == 'owner') {
-      this.router.navigateByUrl('ownerland/ownerlogin');
+    else if (this.endpoint == 'user') {
+      this.router.navigateByUrl('userland/userlogin');
 
     }
-    else {
-      this.router.navigateByUrl('ownerland/ownerlogin');
+    {
+      this.router.navigateByUrl('userland/userlogin');
 
     }
   }
+  booknow(){
+    this.router.navigateByUrl('/userland/booknow');
+  }
+
+
+
 }
-
-
-
-
