@@ -51,10 +51,10 @@ export class UserSignInComponent {
       else if (this.endPoint == 'owner') {
         alert('login successfully');
         this.dataservice.ownerName = this.loginform.value.name;
-        this.router.navigateByUrl('/ownerland/ownerlogin')
+        this.router.navigateByUrl('ownerland/ownerlogin')
       }
       else {
-        this.router.navigateByUrl('/userland/userlogin')
+        this.router.navigateByUrl('userland/userlogin')
       }
     }
     else {
@@ -66,13 +66,13 @@ export class UserSignInComponent {
   }
   back(){
     if (this.endPoint == 'admin') {
-      this.router.navigateByUrl('/adminland')
+      this.router.navigateByUrl('adminland')
     }
-    else if (this.endPoint == 'owner') {
-      this.router.navigateByUrl('/ownerland')
+    else if (this.endPoint == 'user') {
+      this.router.navigateByUrl('userland')
     }
     else {
-      this.router.navigateByUrl('/userland')
+      this.router.navigateByUrl('userland')
     }
   }
 

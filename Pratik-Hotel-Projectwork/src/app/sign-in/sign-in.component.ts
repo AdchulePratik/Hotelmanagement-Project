@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DataService } from '../data.service';
+import { MatSnackBar, MatSnackBarConfig, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-sign-in',
@@ -12,17 +13,18 @@ export class SignInComponent {
   loginform!: FormGroup;
   // endPoint:any;
   getApiData: any;
-  endPoint : any;
+  endPoint: any;
 
 
 
   constructor(private fb: FormBuilder,
-     private dataservice: DataService, private router: Router) {
+    private dataservice: DataService, private router: Router,
+    private snackbar: MatSnackBar) {
 
   }
   ngOnInit() {
-   this.endPoint = this.dataservice.endPoint;
-   console.log(" this.endPoint ", this.endPoint );
+    this.endPoint = this.dataservice.endPoint;
+    console.log(" this.endPoint ", this.endPoint);
 
     this.login();
   }
@@ -44,12 +46,20 @@ export class SignInComponent {
       this.dataservice.signinOrSignUp = 'signIn';
 
       if (this.endPoint == 'admin') {
-        alert('login successfully');
+        // alert('login successfully');
+        const panelCss = new MatSnackBarConfig();
+        panelCss.verticalPosition ='top';
+        this.snackbar.open('Login successfully','Close',panelCss);
+        this.router.navigateByUrl('/adminland/adminlogin')
+
+
+
         this.router.navigateByUrl('/adminland/adminlogin')
       }
       else if (this.endPoint == 'owner') {
         alert('login successfully');
-        this.dataservice.ownerName = this.loginform.value.name;
+        // this.dataservice.ownerName = this.loginform.value.name;
+        this.dataservice.ownerName = 'Pratik';
         this.router.navigateByUrl('/ownerland/ownerlogin')
       }
       else {
@@ -63,7 +73,7 @@ export class SignInComponent {
 
     }
   }
-  back(){
+  back() {
     if (this.endPoint == 'admin') {
       this.router.navigateByUrl('/adminland')
     }

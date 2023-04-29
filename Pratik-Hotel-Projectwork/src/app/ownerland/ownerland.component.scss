@@ -1,11 +1,37 @@
-body{
+body {
   background-image: url("~/src/assets/images/Grand-Resort-owner.jpg");
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.p-cls{
+
+.p-cls {
   color: floralwhite;
 
+}
+
+.btn1:hover {
+  color: deeppink;
+  background-color: black;
+}
+
+.btn2:hover {
+  color: whitesmoke;
+  background-color: black;
+}
+
+.btn3:hover {
+  color: aqua;
+  background-color: black;
+}
+
+.btn4:hover {
+  color: yellow;
+  background-color: black;
+}
+
+.btn5:hover {
+  color:aquamarine;
+  background-color: black;
 }

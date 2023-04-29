@@ -5,7 +5,7 @@ body{
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: hsl(166, 100%, 88%);
+  background-color:whitesmoke
 
 }
 .loginform{
@@ -15,7 +15,7 @@ body{
   width: 30%;
   position: relative;
   top: 150px;
-  background-color:aqua
+  background-color:deeppink
 }
 mat-form-field {
   padding: 20px;
@@ -24,3 +24,13 @@ mat-form-field {
 mat-raised-button {
   width: 80%;
 }
+.signup{
+  color:black;
+
+}
+
+.btn1:hover{
+  color:darkblue;
+  background-color:black;
+  }
+

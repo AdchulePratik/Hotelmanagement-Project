@@ -1,4 +1,4 @@
-body{
+body {
   // background-image: url("~/src/assets/images/Grand-Resort-owner.jpg");
   background-color: mediumturquoise;
   height: 100%;
@@ -6,30 +6,65 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.p-cls{
-  color:black;
+
+.p-cls {
+  color: black;
 }
 
 
 
 
-table,th,tr,td{
+table,th,tr,td {
   border: 1px solid rgb(8, 182, 245);
-  background-color: rgb(215, 233, 250);
+  background-color: whitesmoke;
   color: brown;
   text-align: center;
   border-collapse: collapse;
   margin: auto;
-  padding: 6px 6px;;
+  padding: 6px 6px;
 
 }
+
 .div2 {
   position: relative;
-  top:60px;
+  top: 60px;
 }
-.div{
+
+.div2:hover{
+  position: relative;
+  top: 60px;
+color: blue;
+}
+
+.div {
   margin: auto;
   text-align: center;
   position: relative;
-  top:30px;
+  top: 30px;
+}
+
+.btn1:hover {
+  color: aqua;
+  background-color: black;
+}
+
+.div:hover {
+  color: aqua;
+  // background-color: black;
+  padding: 10px 10px;
+}
+
+table,
+th,
+tr,
+td:hover {
+  border: 2px solid rgb(245, 8, 107);
+  background-color: black;
+  color: brown;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 6px 6px;
+  cursor: pointer;
+
 }

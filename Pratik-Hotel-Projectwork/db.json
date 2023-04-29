@@ -3,8 +3,8 @@
     {
       "name": "Pratik",
       "mobile": "9011742609",
-      "Password": "Pratik12",
-      "confirmPassword": "Pratik12",
+      "Password": "Pratik123",
+      "confirmPassword": "Pratik123",
       "TnC": true,
       "gender": "male",
       "email": "pratikadchule@gmail.com",
@@ -195,16 +195,6 @@
   ],
   "hotelDetails": [
     {
-      "hotelName": "Taj",
-      "ownerName": "Pratik",
-      "hotelContactNo": "9011742609",
-      "hotelAddress": "Banglore",
-      "hotelEmail": "Taj@gmail.com",
-      "totalRooms": "25",
-      "speciality": "veg",
-      "id": 1
-    },
-    {
       "hotelName": "Radission",
       "ownerName": "Pratik",
       "hotelContactNo": "9898989855",
@@ -265,5 +255,152 @@
       "id": 7
     }
   ],
-  "hotelBooking": []
+
+  "hotels": [
+    {
+      "name": "Green Valey",
+      "phone": 8888696921,
+      "email": "Green@gmail.com",
+      "menu": "Manchurian",
+      "discription": "The Best manchurian in the world",
+      "address": "Nehru Chauk , Amaravati - 421212",
+      "arooms": 300,
+      "workers": 20,
+      "id": 3
+    },
+    {
+      "name": "Five Star Hotel",
+      "phone": 8888981212,
+      "email": "star@gmail.com",
+      "menu": "Coffee",
+      "discription": "The Best Coffee you will ever have !!",
+      "address": "Chatrapati Shivaji Nagar, Pune - 431213",
+      "arooms": 25,
+      "workers": 30,
+      "img": "hotelroom",
+      "id": 4
+    },
+    {
+      "name": "Hotel Lotus",
+      "phone": 7499269640,
+      "email": "Tanaya@gmail.com",
+      "menu": "Chat",
+      "discription": "The best Chat in the whole universe !!",
+      "address": "pundalik baba nagar, \nAmaravati - 444604",
+      "arooms": 200,
+      "workers": 200,
+      "img": "hotel",
+      "id": 5
+    },
+    {
+      "name": "Taj Hotel",
+      "phone": 9421322354,
+      "email": "Taj@gmail.com",
+      "menu": "Dal Tadka",
+      "discription": "The greatest hotel of all time",
+      "address": "Chatrapti sambhaji maharaj - 431213",
+      "arooms": 300,
+      "workers": 600,
+      "id": 6
+    },
+    {
+      "name": "fhjhgh",
+      "phone": 584564,
+      "email": "fdslajdkhj",
+      "menu": "hkjdskl;fhjdsk",
+      "discription": "lkjfdsl;kjalkf",
+      "address": "lkjhfdslk;jh",
+      "arooms": 45,
+      "workers": 5665,
+      "id": 7
+    }
+  ],
+  "bookings": [
+    {
+      "start": "2023-03-02T18:30:00.000Z",
+      "end": "2023-03-16T18:30:00.000Z",
+      "fullname": "sadfsa",
+      "email": "ajay@gmail.com",
+      "phone": "08857822354",
+      "payment": "net-banking",
+      "guests": "1",
+      "id": 1
+    },
+    {
+      "start": "2023-03-02T18:30:00.000Z",
+      "end": "2023-03-16T18:30:00.000Z",
+      "fullname": "sadfsa",
+      "email": "ajay@gmail.com",
+      "phone": "8857822354",
+      "payment": "net-banking",
+      "guests": "1",
+      "id": 2
+    },
+    {
+      "start": "2023-03-02T18:30:00.000Z",
+      "end": "2023-03-10T18:30:00.000Z",
+      "fullname": "ajay kharat",
+      "email": "kharat@gmail.com",
+      "phone": "324234234234242",
+      "payment": "upi",
+      "guests": "2",
+      "id": 3
+    },
+    {
+      "start": "2023-03-16T18:30:00.000Z",
+      "end": "2023-03-17T18:30:00.000Z",
+      "fullname": "rahul",
+      "email": "rahul@gmail.com",
+      "phone": "32423423423",
+      "payment": "upi",
+      "guests": "2",
+      "id": 4
+    },
+    {
+      "start": "2023-03-01T18:30:00.000Z",
+      "end": "2023-03-16T18:30:00.000Z",
+      "fullname": "Tanaya Bagekar",
+      "email": "tanaya@12gmail.com",
+      "phone": "9876546512",
+      "payment": "qr",
+      "guests": "2",
+      "rooms": "2",
+      "id": 5
+    },
+    {
+      "start": "2023-02-28T18:30:00.000Z",
+      "end": "2023-03-09T18:30:00.000Z",
+      "fullname": "Ajay Kharat",
+      "email": "kharatajay314@gmail.com",
+      "phone": "08857822354",
+      "payment": "upi",
+      "guests": "2",
+      "rooms": "2",
+      "id": 6
+    },
+    {
+      "start": "2023-02-28T18:30:00.000Z",
+      "end": "2023-03-09T18:30:00.000Z",
+      "fullname": "Shivani Jadhav",
+      "email": "Shivani.jadhav@gmail.com",
+      "phone": "9403782354",
+      "payment": "upi",
+      "guests": "2",
+      "rooms": "1",
+      "id": 7
+    },
+    {
+      "start": "2023-02-28T18:30:00.000Z",
+      "end": "2023-03-08T18:30:00.000Z",
+      "fullname": "ajay kharat",
+      "email": "kharatajay023@gmail.com",
+      "phone": "8857822354",
+      "payment": "upi",
+      "guests": "2",
+      "rooms": "1",
+      "id": 8
+    }
+  ]
+
+
 }

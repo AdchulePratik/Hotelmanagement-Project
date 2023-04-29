@@ -59,7 +59,7 @@ export class HoteldetailsBookuserComponent {
     }
   }
   booknow(){
-    this.router.navigateByUrl('/userland/booknow');
+    this.router.navigateByUrl('userland/booknow');
   }
 
 

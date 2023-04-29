@@ -5,24 +5,55 @@ body{
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:aquamarine;
+  background-color:whitesmoke;
+
 }
+.main{
+
+  margin: 10px 400px;
+
+
+
+}
+
 
 .signupform{
   text-align:center;
-  border: 2px solid pink;
+  border: 6px solid deeppink;
   padding: 10px;
-  width: 30%;
-  height:fit-content;
+  width: 70%;
+  height:60%;
   margin: 20px 120px;
-  background-color:red
+  background-color:black;
+  color: red;
+  font-weight: bolder;
+  text-align: center;
+
 }
 
 mat-form-field {
   padding: 20px;
   width: 90%;
+  top: 150px;
+
 }
+
 mat-radio-group{
   width: 80%;
   text-align: left;
 }
+.my-custom-snackbar{
+  margin: 0!important;
+  position: absolute;
+  right: 25px;
+  bottom: 100px;
+}
+.snackBarcss{
+  bottom: 100px;
+  position: absolute;
+}
+
+.btn1:hover{
+  color:green;
+  background-color:black;
+  }

@@ -76,13 +76,13 @@ export class UserSignUpComponent {
       this.dataservice.signinOrSignUp = 'signUp';
 
       if (this.endPoint == 'admin') {
-        this.router.navigateByUrl('/adminland/adminlogin')
+        this.router.navigateByUrl('adminland/adminlogin')
       }
       else if (this.endPoint == 'owner') {
-        this.router.navigateByUrl('/ownerland/ownerlogin')
+        this.router.navigateByUrl('ownerland/ownerlogin')
       }
       else {
-        this.router.navigateByUrl('/ownerland/ownerlogin')
+        this.router.navigateByUrl('ownerland/ownerlogin')
       }
 
     })
@@ -117,7 +117,7 @@ export class UserSignUpComponent {
     }
   }
   back() {
-    this.router.navigateByUrl('/userland/usersignIn');
+    this.router.navigateByUrl('userland/usersignIn');
   }
 
 }

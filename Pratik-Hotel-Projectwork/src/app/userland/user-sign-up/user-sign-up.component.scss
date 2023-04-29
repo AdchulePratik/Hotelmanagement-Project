@@ -5,7 +5,7 @@ body{
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:aquamarine;
+  background-color:white;
 }
 
 .signupform{
@@ -15,7 +15,7 @@ body{
   width: 30%;
   height:fit-content;
   margin: 20px 120px;
-  background-color:red
+  background-color:thistle
 }
 
 mat-form-field {
@@ -26,3 +26,9 @@ mat-radio-group{
   width: 80%;
   text-align: left;
 }
+
+.btn1:hover{
+  color:darkblue;
+  background-color:black;
+  }
+

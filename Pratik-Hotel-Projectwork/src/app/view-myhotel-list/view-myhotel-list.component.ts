@@ -24,10 +24,10 @@ export class ViewMyhotelListComponent {
       this.router.navigateByUrl('/adminland/adminlogin');
     }
     else if (this.endpoint == 'owner') {
-      this.router.navigateByUrl('/ownerland/ownerlogin');
+      this.router.navigateByUrl('/ownerland');
     }
     else {
-      this.router.navigateByUrl('/ownerland/ownerlogin');
+      this.router.navigateByUrl('/ownerland');
     }
   }
 

@@ -80,11 +80,11 @@ export class HotelRegistrationComponent {
 
     // this.commonApicallService.postApiCall(this.getEndPoint, this.hotelRegistrationForm.value).subscribe(response => { })
     // this.commonApicallService.hotelDetailsList = 'hotelDetails';
-    this.router.navigateByUrl('/ownerland/ownerlogin');
+    this.router.navigateByUrl('ownerland/ownerlogin');
 
   }
   back() {
-    this.router.navigateByUrl('/ownerland/ownerlogin');
+    this.router.navigateByUrl('ownerland/ownerlogin');
   }
   toggleShow() {
     this.show = !this.show;

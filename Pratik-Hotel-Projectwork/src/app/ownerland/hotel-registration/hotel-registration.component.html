@@ -1,8 +1,8 @@
 <body><br>
-<!-- 
+<!--
   <button mat-raised-button color="warn" routerLink="/owner/ownerlogin">Back</button> -->
 
-  <button mat-raised-button color="accent" (click)="back()">Back Click</button>
+  <button class="btn1" mat-raised-button color="accent" (click)="back()">Back Click</button>
 
   <p class="p-cls"><b><i>Hotel-Registration works!</i></b> </p>
 
@@ -178,11 +178,14 @@
               <mat-checkbox formControlName="acceptTerms"></mat-checkbox> I am interested in listing my hotel on
               www.HotelProject.com. I agree to the Terms And Conditions <br>
             </div>
-
+<!--
             <div class="text-center">
               <input type="submit" class="btn btn-my" value="Sign Up" [disabled]="!hotelRegistrationForm.valid"
                 (click)="submit()">
-            </div>
+            </div> -->
+
+            <button *ngIf="!isEditJourney" mat-raised-button color="accent" [disabled]="hotelRegistrationForm.invalid" (click)="submit()">Submit</button>
+            <button *ngIf="isEditJourney" mat-raised-button color="accent" [disabled]="hotelRegistrationForm.invalid" (click)="submit()">Update</button>
 
             <div class="text-center login">
               Want to see all Registered hotels ? <a routerLink="/hotelDetails">Click</a> here.

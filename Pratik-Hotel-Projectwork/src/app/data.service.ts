@@ -9,6 +9,9 @@ export class DataService {
   isEditJourney: any;
   editJourney: any;
   editId!: any;
+  navButton:any;
+  moduleNavigation:any;
+  selectedModule!: string;
 
   hotelDetailsById: any;
 
@@ -21,7 +24,8 @@ export class DataService {
   Data: any;
   signinOrSignUp: any;
   ownerName: any;
-  to!: number;
+  selectedHotel: any;
+
   constructor(private http: HttpClient) {
 
 

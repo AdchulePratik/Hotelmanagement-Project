@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { CustomSnackbarComponent } from '../custom-snackbar/custom-snackbar.component';
 
 @Component({
   selector: 'app-hotel-details',
@@ -10,17 +12,22 @@ import { Router } from '@angular/router';
 export class HotelDetailsComponent {
   hotelDetails: any;
   tableHeadings = ["Hotel Name", "Owner Name", "Hotel Contact No",
-    "Hotel Address", "Hotel Email", "Rooms", "Speciality", "Delete", "Edit"];
+    "Hotel Address", "Hotel Email", "Rooms", "Speciality","Delete","Edit" ];
   endpoint!: string;
   hotelEndPoint = "hotelDetails";
   inputBoxValue: any;
+  ownerName: any;
+  hotelDetailsById: any;
+
+  hotelDetailsByOwner: any = [];
+
 
 
 
 
 
   constructor(private dataservice: DataService,
-    private router: Router) {
+    private router: Router,public dialog: MatDialog) {
 
   }
 
@@ -36,24 +43,37 @@ export class HotelDetailsComponent {
   async delete(id: number) {
     await this.dataservice.deleteApiCall(this.hotelEndPoint, id).toPromise();
     this.getHotelDetails();
-  }
-  async edit(id:number){
-    await this.dataservice.getApiCall(this.hotelEndPoint,id).toPromise();
-    this.getHotelDetails();
 
-    
+    this.dialog.open(CustomSnackbarComponent,{
+      minWidth:'200px',
+      height:'100px',
+    })
+  }
+
+    async edit(id:number){
+      this.dataservice.editId = id;
+      this.dataservice.EditJourney = true;
+
+      this.hotelDetails = await this.dataservice.getApiCall(this.hotelEndPoint,id).toPromise();
+      console.log('this.hotelDetailsById',this.hotelDetails);
+      this.dataservice.hotelDetailsById = this.hotelDetails;
+
+    // this.router.navigateByUrl('/owner/hotelRegistration-form2');
+    this.router.navigateByUrl('/ownerland/hotelRegistration');
+
+
 
   }
   back() {
     if (this.endpoint == 'admin') {
-      this.router.navigateByUrl('/adminland/adminlogin');
+      this.router.navigateByUrl('adminland');
     }
-    else if (this.endpoint == 'owner') {
-      this.router.navigateByUrl('ownerland/ownerlogin');
+    else if (this.endpoint == 'admin') {
+      this.router.navigateByUrl('ownerland');
 
     }
     else {
-      this.router.navigateByUrl('ownerland/ownerlogin');
+      this.router.navigateByUrl('ownerland');
 
     }
   }

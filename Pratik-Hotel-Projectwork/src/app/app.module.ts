@@ -11,12 +11,11 @@ import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
-
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ViewMyhotelListComponent } from './view-myhotel-list/view-myhotel-list.component';
+import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.component';
+
 
 
 
@@ -28,7 +27,9 @@ import { ViewMyhotelListComponent } from './view-myhotel-list/view-myhotel-list.
     SignUpComponent,
     HotelDetailsComponent,
     ViewMyhotelListComponent,
-  
+    CustomSnackbarComponent,
+
+
   ],
   imports: [
     BrowserModule,

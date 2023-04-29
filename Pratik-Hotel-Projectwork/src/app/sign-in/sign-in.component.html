@@ -5,7 +5,7 @@
 
 <p> <u><b><i>Sign-in works!</i> </b> </u></p>
 
-<button mat-raised-button color="alert" (click)="back()">Back</button>
+<button class="btn1" mat-raised-button color="alert" (click)="back()">Back</button>
 
 
 
@@ -13,11 +13,11 @@
 
 
 <form class="loginform" [formGroup]="loginform">
-  <h2>Login Form </h2>
+  <h2><b>Login</b>  </h2>
 
   <mat-form-field>
     <mat-label >UserName</mat-label>
-    <input matInput formControlName="name" autocomplete="on">
+    <input matInput formControlName="name" class="input" autocomplete="on">
     <mat-error *ngIf="loginform.get('name')?.touched && loginform.get('name')?.errors?.['required']">Name is
       Required</mat-error>
     <mat-error *ngIf="loginform.get('name')?.errors?.['minlength']">minimun 2 charactors Required</mat-error>

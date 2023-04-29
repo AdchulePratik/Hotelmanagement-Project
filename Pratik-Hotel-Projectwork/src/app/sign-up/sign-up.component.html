@@ -1,18 +1,19 @@
 <body>
 
+
 <p><u><b><i>Sign-up works!</i></b></u>!</p>
 
-<button mat-raised-button color="alert" (click)="back()">Back</button>
-
-<body class="body">
+<button class="btn1" mat-raised-button color="alert" (click)="back()">Back</button>
 
 
 
 
 
+
+<div class="main">
 
 <form class="signupform " [formGroup]="signUpForm">
-  <h1>Sign Up Form </h1> <br>
+  <h1>Sign Up  </h1> <br>
   <mat-form-field>
     <mat-label>Name</mat-label>
     <input matInput type="text" formControlName="name" autocomplete="on" >
@@ -94,4 +95,10 @@
 
 
 </form>
+
+</div>
+
+
+
+
 

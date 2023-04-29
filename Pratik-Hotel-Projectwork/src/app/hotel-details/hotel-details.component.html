@@ -2,7 +2,7 @@
 
 <p class="p-cls"><b><i>Hotel-details works!</i> </b> </p>
 
-<button mat-raised-button color="accent" (click)="back()"> Back </button>
+<button class="btn1" mat-raised-button color="accent" (click)="back()"> Back </button>
 
 <div class="div">
 
@@ -13,14 +13,14 @@
 </div>
 
 <div class="div2">
-  <table>
+  <table >
     <tr>
       <th *ngFor="let heading of tableHeadings"> {{heading}} </th>
       <th *ngIf="endpoint == 'admin'">Delete</th>
       <th *ngIf="endpoint == 'admin'">Edit</th>
     </tr>
 
-    <tr *ngFor="let hotelData of hotelDetails | search:inputBoxValue ">
+    <tr  *ngFor="let hotelData of hotelDetails | search:inputBoxValue ">
       <td>{{hotelData.hotelName}}</td>
       <td>{{hotelData.ownerName}}</td>
       <td>{{hotelData.hotelContactNo}}</td>

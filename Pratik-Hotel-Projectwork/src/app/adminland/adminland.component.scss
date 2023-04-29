@@ -1,4 +1,4 @@
-body{
+body {
   background-image: url("~/src/assets/images/Grand-Resort-admin.jpg");
   height: 100%;
   width: 100%;
@@ -6,3 +6,17 @@ body{
   background-size: cover;
 }
 
+.btn1:hover {
+  color: aqua;
+  background-color: black;
+}
+
+.btn2:hover {
+  color: red;
+  background-color: black;
+}
+
+.btn3:hover {
+  color:darkmagenta;
+  background-color: black;
+}

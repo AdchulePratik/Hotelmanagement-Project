@@ -1,9 +1,39 @@
 <div class="homepage">
+
+<!--
   <nav>
-     <marquee behavior="" direction=""><button mat-raised-button> Pr@tik Grand Resort</button></marquee>
+
       <button mat-raised-button color="warn" (click)="journey('admin')">Admin</button>
       <button mat-raised-button color="accent" (click)="journey('owner')">Owner</button>
-      <button mat-raised-button color="primary" (click)="journey('user')">User</button>
+      <button mat-raised-button color="primary" (click)="journey('user')">User</button> -->
 
-  </nav>
+
+
+      <div class="container text-center navigation">
+
+        <button class="nav-button button2" routerLink="/adminland"
+        (click)="adminModuleSelected()">
+            <i class="bi bi-person-fill-gear me-2 fs-3"></i> Admin
+        </button>&nbsp;
+
+        <button class="nav-button button3" routerLink="/ownerland"
+        (click)="ownerModuleSelected()">
+            <i class="bi bi-key me-2 fs-3"></i> Owner
+        </button>&nbsp;
+
+        <button class="nav-button button1" routerLink="/userland" (click)="userModuleSelected()">
+          <i class="bi bi-person-circle me-2 fs-3"></i> User
+      </button>&nbsp;
+
+
+      <h1><button class="name">Pr@tik</button></h1>
+
+
+
+    </div>
+
+
+  <!-- </nav> -->
   </div>
+
+

@@ -83,11 +83,15 @@ export class OwnerloginComponent {
     this.dataservice.hotelDetailsById = this.hotelDetailsById;
 
     // this.router.navigateByUrl('/owner/hotelRegistration-form2');
-    this.router.navigateByUrl('/ownerland/hotelRegistration');
+    this.router.navigateByUrl('ownerland/hotelRegistration');
 
   }
   async patch(id:number,data:any){
     await this.dataservice.patchApiCall(this.hotelEndPoint,id).toPromise();
+  }
+  newhotelRegister(){
+    this.dataservice.EditJourney = false;
+    this.router.navigateByUrl('ownerland/hotelRegistration');
   }
 
 

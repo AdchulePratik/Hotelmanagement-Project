@@ -11,6 +11,7 @@ import { UserSignInComponent } from './user-sign-in/user-sign-in.component';
 import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
 
 
+
 @NgModule({
   declarations: [
     UserlandComponent,
@@ -18,12 +19,14 @@ import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
     UserloginComponent,
     HoteldetailsBookuserComponent,
     UserSignInComponent,
-    UserSignUpComponent
+    UserSignUpComponent,
+
   ],
   imports: [
     CommonModule,
     UserlandRoutingModule,
-    SharedModule
+    SharedModule,
+   
   ]
 })
 export class UserlandModule { }

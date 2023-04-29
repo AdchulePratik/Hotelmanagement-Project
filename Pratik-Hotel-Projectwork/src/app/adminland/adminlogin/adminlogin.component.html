@@ -1,14 +1,20 @@
 <body>
 
-
 <p class="p-cls"><b> Adminlogin works!</b></p>
 
-<div class="div">
-<button mat-raised-button color="warn" (click)="back()">Back</button>&nbsp;
-<button mat-raised-button color="warn" routerLink="/hotelDetails">view All HotelList</button>&nbsp;
+<button class="btn1" mat-raised-button color="warn" (click)="back()">Back</button>&nbsp;
+<button class="btn2" mat-raised-button color="warn" routerLink="/hotelDetails">view All HotelList</button>&nbsp;
 
+<form [formGroup]="formdata">
 
-</div>
+  <mat-label>Vehicles</mat-label><br>
+  <mat-radio-group formControlName="vehicles" ></mat-radio-group>
+  <mat-checkbox *ngfor="let vehicle of Vehicles" (change)="setVehicles($event,vehicle.option)">{{vehicle.option}} </mat-checkbox>
+
+  <button mat-raised-button color (click)="submit()">Submit</button>
+
+</form>
+
 
 
 
