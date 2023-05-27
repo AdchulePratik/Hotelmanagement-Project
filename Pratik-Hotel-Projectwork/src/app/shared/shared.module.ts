@@ -17,9 +17,10 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatNativeDateModule } from "@angular/material/core";
-import { SearchPipe } from '../search.pipe';
+import { SearchPipe } from '../pipes/search.pipe';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ToastrModule } from 'ngx-toastr';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -51,16 +52,11 @@ import { ToastrModule } from 'ngx-toastr';
     MatDividerModule,
     MatNativeDateModule,
     MatSnackBarModule,
-    ToastrModule,
-
-
-
-
-
-
+    ToastrModule.forRoot()
 
   ],
   exports: [
+    CommonModule,
     MatRadioModule,
     MatButtonModule,
     MatIconModule,
@@ -85,7 +81,7 @@ import { ToastrModule } from 'ngx-toastr';
 
 
   ],
-  providers:[
+  providers: [
 
   ],
 })

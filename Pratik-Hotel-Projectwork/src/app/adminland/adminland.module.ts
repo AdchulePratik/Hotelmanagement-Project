@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { AdminlandRoutingModule } from './adminland-routing.module';
 import { AdminlandComponent } from './adminland.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';

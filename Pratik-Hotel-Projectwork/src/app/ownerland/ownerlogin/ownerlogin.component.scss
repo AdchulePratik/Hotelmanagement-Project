@@ -1,4 +1,4 @@
-body{
+body {
   // background-image: url("~/src/assets/images/Grand-Resort-owner.jpg");
   background-color: steelblue;
   height: 100%;
@@ -7,57 +7,79 @@ body{
   background-size: cover;
 }
 
-// .p-cls{
-
-
-// }
-
-div.btns button{
+div.btns button {
   margin-left: 3px;
 }
-.btns{
-   position: relative;
-   top: 30px;
+
+.btns {
+  position: relative;
+  top: 30px;
 }
-table,th,tr,td{
-   border: 1px solid rgb(245, 8, 8);
-   background-color: rgb(250, 215, 236);
-   color: green;
-   text-align: center;
-   border-collapse: collapse;
-   margin: auto;
-   padding: 10px 10px;;
+
+table,
+th,
+tr,
+td {
+  border: 1px solid rgb(245, 8, 8);
+  background-color: rgb(250, 215, 236);
+  color: green;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 10px 60px;
+  ;
 
 }
+
+table,
+th,
+tr,
+td:hover {
+  border: 1px solid rgb(245, 8, 8);
+  background-color: black;
+  color: green;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 10px 10px;
+  cursor: pointer;
+  ;
+
+}
+
 .table-container {
-   position: relative;
-   top:60px;
-   cursor: pointer;
-}
-.serach-bar-container{
-   margin: auto;
-   text-align: center;
-   position: relative;
-   top:30px;
+  position: relative;
+  top: 60px;
+  cursor: pointer;
 }
 
-.btn1:hover{
-  color:darkblue;
-  background-color:black;
-  }
+.serach-bar-container {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
 
-  .btn2:hover{
-    color:darkgoldenrod;
-    background-color:black;
-    }
+.btn1:hover {
+  color: darkblue;
+  background-color: black;
+  font-size: larger;
+}
 
-    .btn3:hover{
-      color:darkolivegreen;
-      background-color:black;
-      }
+.btn2:hover {
+  color: darkgoldenrod;
+  background-color: black;
+  font-size: larger;
+}
 
-      .btn4:hover{
-        color:rgb(139, 0, 69);
-        background-color:black;
-        }
+.btn3:hover {
+  color: darkolivegreen;
+  background-color: black;
+  font-size: larger;
+}
 
+.btn4:hover {
+  color: rgb(139, 0, 69);
+  background-color: black;
+  font-size: larger;
+}

@@ -11,9 +11,6 @@ body {
   color: black;
 }
 
-
-
-
 table,th,tr,td {
   border: 1px solid rgb(8, 182, 245);
   background-color: whitesmoke;
@@ -21,8 +18,35 @@ table,th,tr,td {
   text-align: center;
   border-collapse: collapse;
   margin: auto;
-  padding: 6px 6px;
+  padding: 10px 50px;
 
+}
+
+table,
+th,
+tr,
+td:hover {
+  border: 2px solid rgb(245, 8, 107);
+  background-color: black;
+  color: brown;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 10px 50px;
+  cursor: pointer;
+
+}
+.div {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.div:hover {
+  color: aqua;
+  // background-color: black;
+  padding: 10px 10px;
 }
 
 .div2 {
@@ -36,35 +60,12 @@ table,th,tr,td {
 color: blue;
 }
 
-.div {
-  margin: auto;
-  text-align: center;
-  position: relative;
-  top: 30px;
-}
-
 .btn1:hover {
   color: aqua;
   background-color: black;
+  font-size: larger;
 }
 
-.div:hover {
-  color: aqua;
-  // background-color: black;
-  padding: 10px 10px;
-}
-
-table,
-th,
-tr,
-td:hover {
-  border: 2px solid rgb(245, 8, 107);
+input:hover{
   background-color: black;
-  color: brown;
-  text-align: center;
-  border-collapse: collapse;
-  margin: auto;
-  padding: 6px 6px;
-  cursor: pointer;
-
 }

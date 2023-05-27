@@ -32,8 +32,9 @@ const routes: Routes = [
 
 
   { path: 'adminland', loadChildren: () => import('./adminland/adminland.module').then(m => m.AdminlandModule) },
+  { path: 'ownerland', loadChildren: () => import('./ownerland/ownerland.module').then(m => m.OwnerlandModule) },
   { path: 'userland', loadChildren: () => import('./userland/userland.module').then(m => m.UserlandModule) },
-   { path: 'ownerland', loadChildren: () => import('./ownerland/ownerland.module').then(m => m.OwnerlandModule) }];
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -10,9 +10,6 @@ body{
   color:black;
 }
 
-
-
-
 table,th,tr,td{
   border: 1px solid rgb(8, 182, 245);
   background-color: rgb(215, 233, 250);
@@ -20,13 +17,21 @@ table,th,tr,td{
   text-align: center;
   border-collapse: collapse;
   margin: auto;
-  padding: 6px 6px;;
+  padding: 1px 60px;;
+
 
 }
-.div2 {
-  position: relative;
-  top:60px;
+table,th,tr,td:hover{
+  border: 1px solid rgb(8, 182, 245);
+  background-color: black;
+  color: brown;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 10px 60px;;
+  cursor: pointer;
 }
+
 .div{
   margin: auto;
   text-align: center;
@@ -34,7 +39,35 @@ table,th,tr,td{
   top:30px;
 }
 
+.div2 {
+  position: relative;
+  top:60px;
+}
+
 .btn1:hover{
   color:rgb(139, 49, 0);
   background-color:black;
+  font-size: larger;
   }
+
+  input:hover{
+ background-color: black;
+//  padding: 5px 30px;
+}
+
+  mat-icon:hover{
+    color: aqua;
+  }
+
+
+
+  .btn2:hover{
+    color:whitesmoke;
+    // background-color:black;
+    font-size:larger;
+    font-weight: bolder;
+    }
+
+
+
+

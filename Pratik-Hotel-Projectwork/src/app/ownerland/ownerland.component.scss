@@ -6,32 +6,38 @@ body {
   background-size: cover;
 }
 
-.p-cls {
-  color: floralwhite;
+.p-cls:hover {
+  color:red;
+  font-size: xx-large;
 
 }
 
 .btn1:hover {
   color: deeppink;
   background-color: black;
+  font-size: larger;
 }
 
 .btn2:hover {
   color: whitesmoke;
   background-color: black;
+  font-size: larger;
 }
 
 .btn3:hover {
   color: aqua;
   background-color: black;
+  font-size: larger;
 }
 
 .btn4:hover {
   color: yellow;
   background-color: black;
+  font-size: larger;
 }
 
 .btn5:hover {
   color:aquamarine;
   background-color: black;
+  font-size: larger;
 }

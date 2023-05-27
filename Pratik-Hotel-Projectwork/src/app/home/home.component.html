@@ -1,39 +1,61 @@
-<div class="homepage">
-
-<!--
-  <nav>
-
-      <button mat-raised-button color="warn" (click)="journey('admin')">Admin</button>
-      <button mat-raised-button color="accent" (click)="journey('owner')">Owner</button>
-      <button mat-raised-button color="primary" (click)="journey('user')">User</button> -->
+<body>
 
 
-
-      <div class="container text-center navigation">
-
-        <button class="nav-button button2" routerLink="/adminland"
-        (click)="adminModuleSelected()">
-            <i class="bi bi-person-fill-gear me-2 fs-3"></i> Admin
-        </button>&nbsp;
-
-        <button class="nav-button button3" routerLink="/ownerland"
-        (click)="ownerModuleSelected()">
-            <i class="bi bi-key me-2 fs-3"></i> Owner
-        </button>&nbsp;
-
-        <button class="nav-button button1" routerLink="/userland" (click)="userModuleSelected()">
-          <i class="bi bi-person-circle me-2 fs-3"></i> User
-      </button>&nbsp;
+  <div class="homepage">
 
 
-      <h1><button class="name">Pr@tik</button></h1>
+    <nav>
+
+      <button class="btn1" mat-raised-button color="warn" (click)="journey('admin')">
+        <marquee behavior="" direction="right">
+          <h1> Admin</h1>
+        </marquee>
+      </button><br>
+      <button class="btn2" mat-raised-button color="accent" (click)="journey('owner')">
+        <marquee behavior="" direction="left">
+          <h1> Owner</h1>
+        </marquee>
+      </button><br>
+      <button class="btn3" mat-raised-button color="primary" (click)="journey('user')">
+        <marquee behavior="" direction="right">
+          <h1> User</h1>
+        </marquee>
+      </button>
+
+    </nav>
 
 
+    <div class="crousal-container">
+      <ngb-carousel *ngIf="images" [pauseOnHover]="false">
 
-    </div>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="crousal-img" [src]="images" alt="Random first slide" />
+          </div>
+          <div class="carousel-caption">
+            <h3>Plan your Goa trip</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </ng-template>
 
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="crousal-img" [src]="images" alt="Random second slide" />
+          </div>
+          <div class="carousel-caption">
+            <h3>Plan your Jammu & Kashmir trip</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </ng-template>
 
-  <!-- </nav> -->
-  </div>
-
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="crousal-img" [src]="images" alt="Random third slide" />
+          </div>
+          <div class="carousel-caption">
+            <h3>Plan your Mumbai trip</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
 

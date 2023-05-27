@@ -1,36 +1,38 @@
-body{
+body {
   // background-image: url("~/src/assets/images/ownerland front.jpg");
-
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:whitesmoke
-
+  background-color: whitesmoke
 }
-.loginform{
+
+.loginform {
   text-align: center;
-  margin :auto;
+  margin: auto;
   height: 60%;
   width: 30%;
   position: relative;
   top: 150px;
-  background-color:deeppink
+  background-color: deeppink
 }
+
 mat-form-field {
   padding: 20px;
   width: 90%;
 }
+
 mat-raised-button {
   width: 80%;
 }
-.signup{
-  color:black;
+
+.signup {
+  color: black;
 
 }
 
-.btn1:hover{
-  color:darkblue;
-  background-color:black;
-  }
-
+.btn1:hover {
+  color: darkblue;
+  background-color: black;
+  font-size: larger;
+}

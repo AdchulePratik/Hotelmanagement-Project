@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color:lightslategray;
+  background-color: lightslategray;
   height: 250%;
   width: 100%;
 }
@@ -31,14 +31,6 @@ body {
   text-decoration: none;
 }
 
-// .auth-card {
-//   background: #c31432;
-//   background: -webkit-linear-gradient(to right, #172061, #d32945);
-//   background: linear-gradient(to right, #311262, #cb2f49);
-//   border-radius: 5px;
-//   box-shadow: 1px 1px 20px #24b929;
-//   width: 565px;}
-
 .auth-card {
   background: white;
   background: -webkit-linear-gradient(to right, white, pink);
@@ -49,17 +41,12 @@ body {
 
 }
 
-.form-control {
-  color: azure;
+.box {
+  color: black;
 }
 
-// .user-image {
-//   height: 70px;
-//   width: 70px;
-// }
-
 label {
-  color: #fff;
+  // color: #fff;
   font-weight: 700;
 }
 
@@ -100,8 +87,6 @@ mat-form-field {
   font-size: 14px;
 }
 
-
-
 .btn {
   margin-left: 10px;
   margin-top: 10px;
@@ -123,16 +108,14 @@ mat-form-field {
   margin-top: 20px;
   font-size: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:black;
+  color: black;
   text-shadow: 3px 2px rgb(198, 76, 76);
   // letter-spacing: 7px;
   margin-left: 105px;
 }
 
-.btn1:hover{
-  color:deepskyblue;
-  background-color:black;
-  }
-
-
-
+.btn1:hover {
+  color: deepskyblue;
+  background-color: black;
+  font-size: larger;
+}

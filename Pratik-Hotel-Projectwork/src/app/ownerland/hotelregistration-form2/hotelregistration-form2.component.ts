@@ -74,7 +74,7 @@ export class HotelregistrationForm2Component {
     else {
       this.dataservice.postApiCall(this.hotelEndPoint,this.hotelRegistrationform2.value).subscribe();
     }
-    this.router.navigateByUrl('/owner/ownerlogin');
+    this.router.navigateByUrl('/ownerland/ownerlogin');
 
   }
   // toggleShow(){

@@ -1,11 +1,6 @@
-
-
-
 <body>
 
   <p>hoteldetails-bookuser works!</p>
-
-
 
   <button class="btn1" mat-raised-button color="accent" (click)="back()"> Back </button>
 
@@ -36,13 +31,9 @@
         <td *ngIf="endpoint =='admin'"> <i class="i-cls" (click)="delete (hotelData.id)"></i> delete </td>
 
 
-        <button *ngIf="endpoint =='user'" mat-raised-button color="primary"(click)="booknow()">Book Now</button>
-
-
+        <button class="btn2" *ngIf="endpoint =='user'" mat-raised-button color="primary" (click)="booknow()">Book Now</button>
 
       </tr>
     </table>
 
   </div>
-
-  </body>

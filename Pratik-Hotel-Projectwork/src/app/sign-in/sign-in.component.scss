@@ -1,4 +1,4 @@
-body{
+body {
   // background-image: url("~/src/assets/images/ownerland front.jpg");
 
   height: 100%;
@@ -8,44 +8,46 @@ body{
   background-color: white;
 
 }
-.loginform{
+
+.loginform {
   text-align: center;
-  margin :auto;
+  margin: auto;
   height: 60%;
   width: 25%;
   position: relative;
   top: 50px;
-  background-color:black;
+  background-color: black;
   border: 4px solid blue;
 }
+
 mat-form-field {
   padding: 20px;
   width: 90%;
 }
+
 mat-raised-button {
   width: 80%;
 }
 
-.my-custom-snackbar{
-margin: 0 !important;
-position: absolute;
-right: 25px;
-bottom: 100px;
+.my-custom-snackbar {
+  margin: 0 !important;
+  position: absolute;
+  right: 25px;
+  bottom: 100px;
 }
 
-.snackBarcss
-.mat-dialog-container{
-bottom: 100px;
-position: absolute;
+.snackBarcss .mat-dialog-container {
+  bottom: 100px;
+  position: absolute;
 }
 
-.custom-snackbar{
+.custom-snackbar {
   background-color: black;
   color: red;
 }
 
 
-h2{
+h2 {
   color: black;
   background-color: deeppink;
   border: 4px solid gray;
@@ -53,10 +55,8 @@ h2{
 
 }
 
-.btn1:hover{
-  color:red;
-  background-color:black;
-  }
-
-
-
+.btn1:hover {
+  color: red;
+  background-color: black;
+  font-size: larger;
+}

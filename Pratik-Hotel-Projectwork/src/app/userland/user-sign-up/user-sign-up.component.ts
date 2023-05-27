@@ -9,10 +9,11 @@ import { Router } from '@angular/router';
   templateUrl: './user-sign-up.component.html',
   styleUrls: ['./user-sign-up.component.scss']
 })
+
 export class UserSignUpComponent {
   showPassword: boolean = false;
   showConfirmPassword: boolean = false;
-  signUpForm!: FormGroup;
+  usersignUpForm!: FormGroup;
   passwordMatch: boolean = false;
   password: any;
   confirmPassword: any;
@@ -26,8 +27,10 @@ export class UserSignUpComponent {
   ]
 
   constructor(private fb: FormBuilder,
-    private router: Router, private dataservice: DataService) {
+    private router: Router, private dataservice: DataService) { }
 
+  back() {
+    this.router.navigateByUrl('/userland');
   }
 
   ngOnInit() {
@@ -36,13 +39,8 @@ export class UserSignUpComponent {
 
   }
 
-  get city1() {
-    return this.signUpForm.controls["cities1"] as FormArray;
-
-  }
   signUp() {
-    this.signUpForm = this.fb.group({
-      // name:['',[Validators.required]]
+    this.usersignUpForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3), Validators.pattern('[A-Za-z]*')]],
       mobile: ['', [Validators.required, Validators.minLength(10), Validators.pattern('[0-9]*'), Validators.maxLength(10)]],
       Password: ['', [Validators.required, Validators.minLength(8), Validators.pattern('[A-Za-z0-9]*$')]],
@@ -52,47 +50,28 @@ export class UserSignUpComponent {
       email: ['', [Validators.required]],
       city: ['', [Validators.required]],
       cities1: this.fb.array([])
-
     })
-
   }
+
+  visiblity() {
+    this.showPassword = !this.showPassword;
+  }
+
   onChange(event: any, i: number) {
     const cities = (<FormArray>(
-      this.signUpForm.get("cities")
+      this.usersignUpForm.get("cities")
     )) as FormArray;
     console.log(event.checked, i);
     if (event.checked) {
       cities.push(new FormControl(event.source.value));
     }
+  }
 
-
+  get city1() {
+    return this.usersignUpForm.controls["cities1"] as FormArray;
 
   }
-  submit() {
 
-    console.log('this.cities', this.cities);
-
-    this.dataservice.postApiCall(this.endPoint, this.signUpForm.value).subscribe(response => {
-      this.dataservice.signinOrSignUp = 'signUp';
-
-      if (this.endPoint == 'admin') {
-        this.router.navigateByUrl('adminland/adminlogin')
-      }
-      else if (this.endPoint == 'owner') {
-        this.router.navigateByUrl('ownerland/ownerlogin')
-      }
-      else {
-        this.router.navigateByUrl('ownerland/ownerlogin')
-      }
-
-    })
-
-
-
-  }
-  visiblity() {
-    this.showPassword = !this.showPassword;
-  }
   passwordValidation(pass: any) {
     this.password = pass.target.value;
     console.log('password', pass.target.value);
@@ -116,8 +95,27 @@ export class UserSignUpComponent {
       this.passwordMatch = true;
     }
   }
-  back() {
-    this.router.navigateByUrl('userland/usersignIn');
+
+  submit() {
+
+    console.log('this.cities', this.cities);
+
+    this.dataservice.postApiCall(this.endPoint, this.usersignUpForm.value).subscribe(response => {
+      this.dataservice.signinOrSignUp = 'usersignUp';
+
+      if (this.endPoint == 'admin') {
+        this.router.navigateByUrl('adminland/adminlogin')
+      }
+      else if (this.endPoint == 'user') {
+        this.router.navigateByUrl('userland/userlogin')
+      }
+      else {
+        this.router.navigateByUrl('userland/userlogin')
+      }
+
+    })
   }
+
+
 
 }

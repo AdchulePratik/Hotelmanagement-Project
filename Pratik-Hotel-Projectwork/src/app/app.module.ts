@@ -35,7 +35,6 @@ import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.compo
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     SharedModule,
     FormsModule,
     ReactiveFormsModule,

@@ -1,21 +1,31 @@
-<body>
-
 <p class="p-cls"><b> Adminlogin works!</b></p>
 
 <button class="btn1" mat-raised-button color="warn" (click)="back()">Back</button>&nbsp;
-<button class="btn2" mat-raised-button color="warn" routerLink="/hotelDetails">view All HotelList</button>&nbsp;
+<button class="btn2" mat-raised-button color="warn" (click)="viewAllHotelList()">view All HotelList</button>
+<br><br>
 
-<form [formGroup]="formdata">
+<form [formGroup]="adminlogin">
 
-  <mat-label>Vehicles</mat-label><br>
-  <mat-radio-group formControlName="vehicles" ></mat-radio-group>
-  <mat-checkbox *ngfor="let vehicle of Vehicles" (change)="setVehicles($event,vehicle.option)">{{vehicle.option}} </mat-checkbox>
+  <mat-form-field>
+    <mat-label>Name</mat-label><br>
+    <input matInput type="text" formControlName="name">
+  </mat-form-field>
+  <br>
+
+  <mat-label>Vehicles</mat-label>
+  <mat-radio-group formControlName="vehicles">
+    <mat-checkbox *ngFor="let vehicle of Vehicles"
+    (change)="setVehicles($event,vehicle.option)"
+    [checked]="vehicle.isActive"
+      [value]="vehicle.value">{{vehicle.option}} </mat-checkbox>
+  </mat-radio-group>
+  <br><br>
+
+  <mat-checkbox formControlName="tc" value="terms and conditions" (change)="tcValue($event)">
+    Terms and Conditions
+  </mat-checkbox>
+  <br>
 
   <button mat-raised-button color (click)="submit()">Submit</button>
 
 </form>
-
-
-
-
-

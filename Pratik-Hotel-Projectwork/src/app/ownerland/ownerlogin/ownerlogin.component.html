@@ -1,36 +1,25 @@
 <body>
 
-
   <p class="p-cls"> <b><i>Ownerlogin works!</i> </b> </p>
 
   <div class="div">
     <button class="btn1" mat-raised-button color="alert" (click)="back()">Back</button>&nbsp;
     <!-- <button mat-raised-button color="warn" routerLink="/ownerland/hotelRegistration">Hotel Registration</button>&nbsp; -->
-    <button class="btn2" mat-raised-button color="primary" (click)="newhotelRegister()">New Hotel Registration</button>
+    <button class="btn2" mat-raised-button color="primary" (click)="newhotelRegister()">New Hotel Registration</button>&nbsp;
     <!-- <button mat-raised-button color="accent" routerLink="/owner/hotelRegistration-form2">Hotel Registration form-2</button>&nbsp; -->
     <button class="btn3" mat-raised-button color="accent" (click)="viewMyHotelList()">view My Hotel List</button>&nbsp;
-    <button class="btn4" mat-raised-button color="primary" (click)="viewAllHotelList()">view All Hotel List</button>&nbsp;
+    <button class="btn4" mat-raised-button color="primary" (click)="viewAllHotelList()">view All Hotel
+      List</button>&nbsp;
   </div>
-
-
-  <!-- <div *ngIf="this.hotelDetailsByOwner">
-<ul *ngFor="let hotelData of this.hotelDetailsByOwner">
-    <li>{{hotelData.ownerName}}</li>
-    <li>{{hotelData.hotelName}}</li>
-    <li>{{hotelData.hotelAddress}}</li>
-    <li>{{hotelData.hotelMobile}}</li>
-    <li>{{hotelData.hotelMenu}}</li>
-    <li>{{hotelData.roomAvailable}}</li>
-
-</ul>
-</div> -->
 
   <div *ngIf="this.hotelDetailsByOwner.length !=0">
     <div class="search-bar-container">
+
       <mat-form-field>
         <mat-icon matPrefix>search</mat-icon>
         <input matInput[(ngModel)]="inputBoxValue">
       </mat-form-field>
+
     </div>
   </div>
 
@@ -41,7 +30,7 @@
         <th *ngFor="let heading of tableHeadings"> {{heading}} </th>
       </tr>
 
-      <tr *ngFor="let hotelData of this.hotelDetailsByOwner| search:inputBoxValue">
+      <tr *ngFor="let hotelData of this.hotelDetailsByOwner | search:inputBoxValue">
         <td> {{hotelData.hotelName}} </td>
         <td> {{hotelData.ownerName}} </td>
         <td> {{hotelData.hotelContactNo}} </td>
@@ -58,4 +47,4 @@
 
 
 
-</body>
+

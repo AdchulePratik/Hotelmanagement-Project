@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from '../data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ownerland',
@@ -7,6 +8,15 @@ import { DataService } from '../data.service';
   styleUrls: ['./ownerland.component.scss']
 })
 export class OwnerlandComponent {
+
+  constructor(private dataservice: DataService,private router: Router){}
+
+  viewAllHotelList(){
+   this.router.navigateByUrl('/hotelDetails');
+
+  }
+
+
 
 
 

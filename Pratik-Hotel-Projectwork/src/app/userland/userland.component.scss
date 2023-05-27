@@ -1,4 +1,4 @@
-body{
+body {
   background-image: url("~/src/assets/images/Grand-Resort-user.jpg");
   height: 100%;
   width: 100%;
@@ -6,18 +6,26 @@ body{
   background-size: cover;
 }
 
-.btn1:hover{
-  color:crimson;
-  background-color:black;
-  }
+.btn1:hover {
+  color: crimson;
+  background-color: black;
+  font-size: larger;
+}
 
-  .btn2:hover{
-    color: rgb(251, 127, 255);
-    background-color:black;
-    }
+.btn2:hover {
+  color: rgb(251, 127, 255);
+  background-color: black;
+  font-size: larger;
+}
 
-    .btn3:hover{
-      color:darkgreen;
-      background-color:black;
-      }
+.btn3:hover {
+  color: darkgreen;
+  background-color: black;
+  font-size: larger;
+}
 
+.p-cls:hover {
+  color: darkblue;
+  font-size: xx-large;
+  font-size: larger;
+}

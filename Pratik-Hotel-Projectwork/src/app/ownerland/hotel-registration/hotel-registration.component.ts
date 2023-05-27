@@ -8,6 +8,7 @@ import { DataService } from 'src/app/data.service';
   templateUrl: './hotel-registration.component.html',
   styleUrls: ['./hotel-registration.component.scss']
 })
+
 export class HotelRegistrationComponent {
   hotelRegistrationForm!: FormGroup;
   show: boolean = false;
@@ -17,12 +18,12 @@ export class HotelRegistrationComponent {
   hotelDetailsById: any;
   hotelEndPoint: any;
 
-
   constructor(private formBuilder: FormBuilder,
     private dataService: DataService,
-    private router: Router) {
+    private router: Router) { }
 
-
+  back() {
+    this.router.navigateByUrl('/ownerland');
   }
 
   ngOnInit() {
@@ -42,13 +43,7 @@ export class HotelRegistrationComponent {
     }
 
   }
-  //  async getHotelDetailsById() {
-  //   this.hotelDetailsById =  await this.dataService.hotelDetailsById.getApiCall(this.hotelEndPoint,this.editId).toPromise();
-  //   console.log('this.hotelDetailsById',this.hotelDetailsById);
 
-
-
-  //   }
   hotelRegistration() {
     this.hotelRegistrationForm = this.formBuilder.group({
       ownerName: [this.hotelDetailsById ? this.hotelDetailsById?.ownerName : '', [Validators.required, Validators.minLength(5)]],
@@ -71,24 +66,19 @@ export class HotelRegistrationComponent {
   }
   submit() {
     console.log(this.hotelRegistrationForm.value);
-    if(this.isEditJourney){
-    //put/patch pi
+    if (this.isEditJourney) {
+
     }
-    else{
+    else {
       this.dataService.postApiCall(this.hotelEndPoint, this.hotelRegistrationForm.value).subscribe();
     }
-
-    // this.commonApicallService.postApiCall(this.getEndPoint, this.hotelRegistrationForm.value).subscribe(response => { })
-    // this.commonApicallService.hotelDetailsList = 'hotelDetails';
-    this.router.navigateByUrl('ownerland/ownerlogin');
-
+    this.router.navigateByUrl('/ownerland/ownerlogin');
   }
-  back() {
-    this.router.navigateByUrl('ownerland/ownerlogin');
-  }
+
   toggleShow() {
     this.show = !this.show;
   }
+
   toggleHide() {
     this.show = false;
   }

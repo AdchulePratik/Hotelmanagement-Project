@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './hoteldetails-bookuser.component.html',
   styleUrls: ['./hoteldetails-bookuser.component.scss']
 })
+
 export class HoteldetailsBookuserComponent {
   hotelDetails: any;
   tableHeadings = ["Hotel Name", "Owner Name", "Hotel Contact No",
@@ -16,49 +17,46 @@ export class HoteldetailsBookuserComponent {
   hotelEndPoint = "hotelDetails";
   inputBoxValue: any;
 
-
-
-
-
   constructor(private dataservice: DataService,
-    private router: Router) {
+    private router: Router) { }
 
-  }
+    back() {
+      if (this.endpoint == 'admin') {
+        this.router.navigateByUrl('/adminland');
+      }
+      else if (this.endpoint == 'user') {
+        this.router.navigateByUrl('/userland/');
+
+      }
+     else {
+        this.router.navigateByUrl('/userland');
+
+      }
+    }
 
   ngOnInit() {
     this.endpoint = this.dataservice.endPoint;
     this.getHotelDetails();
   }
+
   async getHotelDetails() {
     this.hotelDetails = await this.dataservice.getApiCall(this.hotelEndPoint).toPromise();
     console.log('this.hotelDetails', this.hotelDetails);
 
   }
+
   async delete(id: number) {
     await this.dataservice.deleteApiCall(this.hotelEndPoint, id).toPromise();
     this.getHotelDetails();
   }
-  async edit(id:number){
-    await this.dataservice.getApiCall(this.hotelEndPoint,id).toPromise();
+
+  async edit(id: number) {
+    await this.dataservice.getApiCall(this.hotelEndPoint, id).toPromise();
     this.getHotelDetails();
 
-
-
   }
-  back() {
-    if (this.endpoint == 'admin') {
-      this.router.navigateByUrl('/adminland/adminlogin');
-    }
-    else if (this.endpoint == 'user') {
-      this.router.navigateByUrl('userland/userlogin');
 
-    }
-    {
-      this.router.navigateByUrl('userland/userlogin');
-
-    }
-  }
-  booknow(){
+booknow() {
     this.router.navigateByUrl('userland/booknow');
   }
 
